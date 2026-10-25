@@ -1,16 +1,78 @@
-# React + Vite
+React Custom Hooks – Product Fetching App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+About the Project
 
-Currently, two official plugins are available:
+This project demonstrates how to create and use a custom React Hook to fetch product data from an API. The custom hook manages the loading state, error handling, and fetched data.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Features
 
-## React Compiler
+- Created a reusable custom hook called "useFetch".
+- Fetches product data from the EscuelaJS API.
+- Displays a loading message while fetching data.
+- Handles API errors and displays an error message.
+- Shows a message when no products are found.
+- Displays product images, titles, and prices.
+- Uses CSS Grid to create a responsive product layout.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Technologies Used
 
-## Expanding the ESLint configuration
+- React
+- JavaScript
+- Vite
+- CSS
+- Fetch API
+- React Hooks ("useState" and "useEffect")
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+API Used
+
+"EscuelaJS Products API" (https://api.escuelajs.co/api/v1/products)
+
+Getting Started
+
+1. Clone the Repository
+
+git clone https://github.com/Manyajain202/react-custom-hooks.git
+
+2. Navigate to the Project Folder
+
+cd react-custom-hooks
+
+3. Install Dependencies
+
+npm install
+
+4. Start the Development Server
+
+npm run dev
+
+Open the local URL displayed in the terminal to view the application in your browser.
+
+Project Structure
+
+react-custom-hooks/
+├── public/
+├── src/
+│   ├── hooks/
+│   │   └── useFetch.js
+│   ├── App.jsx
+│   ├── App.css
+│   ├── index.css
+│   └── main.jsx
+├── index.html
+├── package.json
+└── vite.config.js
+
+Learning Outcomes
+
+- Understanding and creating custom React Hooks.
+- Using "useState" and "useEffect".
+- Fetching data from an external API.
+- Managing loading and error states.
+- Displaying API data dynamically in React.
+- Styling a responsive layout using CSS Grid.
+
+Author
+
+Manya Jain
+GitHub Repository
+"View Project on GitHub" (https://github.com/Manyajain202/react-custom-hooks)
